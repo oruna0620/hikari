@@ -1,0 +1,15 @@
+services:
+  db:
+    image: postgres:16
+    container_name: hikari-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: hikari
+    ports:
+      - "5432:5432"
+    volumes:
+      - hikari-db-data:/var/lib/postgresql/data
+
+volumes:
+  hikari-db-data:

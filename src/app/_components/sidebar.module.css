@@ -1,0 +1,145 @@
+.sidebar {
+  width: var(--sidebar-width);
+  background: var(--color-sidebar-bg);
+  color: var(--color-sidebar-text);
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  transition: width var(--transition);
+  overflow: hidden;
+  position: relative;
+  box-shadow: 4px 0 20px rgba(0, 0, 0, 0.2), 2px 0 8px rgba(12, 135, 193, 0.3);
+  z-index: 10;
+}
+
+.sidebarCollapsed {
+  composes: sidebar;
+  width: var(--sidebar-collapsed);
+}
+
+/* ── Header ── */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  min-height: 60px;
+}
+
+.logo {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: #ffffff;
+  white-space: nowrap;
+  opacity: 1;
+  transition: opacity var(--transition);
+}
+
+.logoHidden {
+  composes: logo;
+  opacity: 0;
+  width: 0;
+  overflow: hidden;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm);
+  color: var(--color-sidebar-text);
+  transition: background var(--transition), color var(--transition);
+  flex-shrink: 0;
+}
+
+.toggle:hover {
+  background: var(--color-sidebar-hover);
+  color: #ffffff;
+}
+
+/* ── Navigation ── */
+.nav {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem 0.625rem;
+  gap: 1px;
+  flex: 1;
+}
+
+.section {
+  padding: 1rem 0.625rem 0.375rem;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: rgba(255, 255, 255, 0.5);
+  white-space: nowrap;
+  overflow: hidden;
+  transition: opacity var(--transition);
+}
+
+.sectionCollapsed {
+  composes: section;
+  opacity: 0;
+  height: 0;
+  padding: 0;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0.625rem;
+  font-size: 0.8125rem;
+  border-radius: var(--radius-sm);
+  transition: background var(--transition), color var(--transition);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.link:hover {
+  background: var(--color-sidebar-hover);
+  color: #ffffff;
+}
+
+.linkActive {
+  composes: link;
+  background: var(--color-sidebar-active);
+  color: var(--color-sidebar-active-text);
+  font-weight: 500;
+}
+
+/* ── Icons ── */
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.label {
+  opacity: 1;
+  transition: opacity var(--transition);
+}
+
+.labelHidden {
+  composes: label;
+  opacity: 0;
+}
+
+/* ── Footer ── */
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 0.625rem;
+  gap: 1px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  margin-top: auto;
+}
