@@ -2,7 +2,7 @@ import { redirect } from "next/navigation";
 import { getSession } from "@/lib/auth/session";
 import { LoginForm } from "./login-form";
 
-export const metadata = { title: "ログイン | 株式会社光" };
+export const metadata = { title: "ログイン | BUTIKOMI" };
 
 export default async function LoginPage() {
   const session = await getSession();

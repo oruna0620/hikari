@@ -3,7 +3,7 @@ import { db } from "@/infrastructure/db/client";
 import { companySettings, users, taxSettings } from "@/infrastructure/db/schema";
 import { AdminClient } from "./admin-client";
 
-export const metadata = { title: "管理者ページ | 株式会社光" };
+export const metadata = { title: "管理者ページ | BUTIKOMI" };
 export const dynamic = "force-dynamic";
 
 export default async function AdminPage() {

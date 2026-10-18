@@ -383,10 +383,10 @@ export function AdminClient({
                         style={{
                           background:
                             u.role === "admin"
-                              ? "rgba(14, 165, 233, 0.1)"
-                              : "rgba(107, 114, 128, 0.1)",
+                              ? "var(--color-primary-light)"
+                              : "var(--color-neutral-light)",
                           color:
-                            u.role === "admin" ? "#0ea5e9" : "#6b7280",
+                            u.role === "admin" ? "var(--color-primary)" : "var(--color-neutral)",
                         }}
                       >
                         {u.role === "admin" ? "管理者" : "スタッフ"}
@@ -397,9 +397,9 @@ export function AdminClient({
                         className={s.badge}
                         style={{
                           background: u.isActive
-                            ? "rgba(16, 185, 129, 0.1)"
-                            : "rgba(239, 68, 68, 0.1)",
-                          color: u.isActive ? "#059669" : "#dc2626",
+                            ? "var(--color-positive-light)"
+                            : "var(--color-negative-light)",
+                          color: u.isActive ? "var(--color-positive)" : "var(--color-negative)",
                         }}
                       >
                         {u.isActive ? "有効" : "無効"}

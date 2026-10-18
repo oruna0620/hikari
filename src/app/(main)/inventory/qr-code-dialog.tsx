@@ -203,7 +203,7 @@ export function QrCodeDialog({ inventories, onClose }: Props) {
                         className={s.btnIcon}
                         onClick={() => handleDeactivate(qr.id)}
                         title="無効化"
-                        style={{ color: "#dc2626" }}
+                        style={{ color: "var(--color-negative)" }}
                       >
                         ✕
                       </button>

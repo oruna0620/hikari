@@ -17,7 +17,7 @@ export async function generateMetadata({
     .from(customers)
     .where(eq(customers.id, id));
   const name = customer?.companyName ?? customer?.customerName ?? "顧客";
-  return { title: `${name} 年間収支 | 株式会社光` };
+  return { title: `${name} 年間収支 | BUTIKOMI` };
 }
 
 export default async function CustomerCashflowPage({

@@ -22,7 +22,7 @@ type NavSection = { section: string };
 type NavItem = NavLink | NavSection;
 
 const navItems: NavItem[] = [
-  { href: "/", label: "ダッシュボード", icon: DashboardRoundedIcon },
+  { href: "/", label: "ホーム", icon: DashboardRoundedIcon },
   { section: "共通マスタ" },
   { href: "/products", label: "品目一覧", icon: Inventory2RoundedIcon },
   { href: "/customers", label: "顧客一覧", icon: PeopleRoundedIcon },
@@ -75,7 +75,14 @@ export function Sidebar() {
     <aside className={collapsed ? styles.sidebarCollapsed : styles.sidebar}>
       <div className={styles.header}>
         <span className={collapsed ? styles.logoHidden : styles.logo}>
-          社内管理システム(仮)
+          <span className={styles.logoText} aria-hidden="true">
+            BUTIKOMI
+          </span>
+          <img
+            src="/images/butikomi-logo.png"
+            alt="BUTIKOMI"
+            className={styles.logoImage}
+          />
         </span>
         <button
           className={styles.toggle}

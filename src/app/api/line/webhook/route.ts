@@ -179,7 +179,7 @@ async function showItemSummary(state: ConversationState, replyToken: string) {
 async function showMenu(replyToken: string) {
   await replyWithQuickReply(
     replyToken,
-    "株式会社光 業務システムです。\n操作を選択してください。",
+    "BUTIKOMIです。\n操作を選択してください。",
     [
       { label: "見積もり作成", text: "見積もり作成" },
       { label: "請求書作成", text: "請求書作成" },
@@ -692,7 +692,7 @@ export async function POST(request: Request) {
         // New friend added
         await reply(
           event.replyToken,
-          "株式会社光の業務システムです。\n「見積もり」または「請求書」と送信してください。"
+          "BUTIKOMIです。\n「見積もり」または「請求書」と送信してください。"
         );
       }
     } catch (err) {

@@ -212,17 +212,17 @@ export function CustomerCashflowClient({
             {monthlyData.map((m) => (
               <tr key={m.month}>
                 <td style={{ fontWeight: 600 }}>{m.month}月</td>
-                <td className={s.textRight} style={{ color: m.income > 0 ? "#059669" : undefined }}>
+                <td className={s.textRight} style={{ color: m.income > 0 ? "var(--color-positive)" : undefined }}>
                   {m.income > 0 ? `¥${m.income.toLocaleString()}` : "—"}
                 </td>
-                <td className={s.textRight} style={{ color: m.expense > 0 ? "#dc2626" : undefined }}>
+                <td className={s.textRight} style={{ color: m.expense > 0 ? "var(--color-negative)" : undefined }}>
                   {m.expense > 0 ? `¥${m.expense.toLocaleString()}` : "—"}
                 </td>
                 <td
                   className={s.textRight}
                   style={{
                     fontWeight: 600,
-                    color: m.income === 0 && m.expense === 0 ? undefined : m.net >= 0 ? "#059669" : "#dc2626",
+                    color: m.income === 0 && m.expense === 0 ? undefined : m.net >= 0 ? "var(--color-positive)" : "var(--color-negative)",
                   }}
                 >
                   {m.income === 0 && m.expense === 0
@@ -233,17 +233,17 @@ export function CustomerCashflowClient({
             ))}
             <tr style={{ borderTop: "2px solid var(--color-border)" }}>
               <td style={{ fontWeight: 700 }}>合計</td>
-              <td className={s.textRight} style={{ fontWeight: 700, color: "#059669" }}>
+              <td className={s.textRight} style={{ fontWeight: 700, color: "var(--color-positive)" }}>
                 ¥{totals.income.toLocaleString()}
               </td>
-              <td className={s.textRight} style={{ fontWeight: 700, color: "#dc2626" }}>
+              <td className={s.textRight} style={{ fontWeight: 700, color: "var(--color-negative)" }}>
                 ¥{totals.expense.toLocaleString()}
               </td>
               <td
                 className={s.textRight}
                 style={{
                   fontWeight: 700,
-                  color: totals.net >= 0 ? "#059669" : "#dc2626",
+                  color: totals.net >= 0 ? "var(--color-positive)" : "var(--color-negative)",
                 }}
               >
                 {totals.net >= 0 ? "+" : ""}¥{totals.net.toLocaleString()}

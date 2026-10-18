@@ -45,7 +45,7 @@ export function LoginForm() {
     <div className={styles.wrapper}>
       <form onSubmit={handleSubmit} className={styles.card}>
         <h1 className={styles.title}>ログイン</h1>
-        <p className={styles.subtitle}>社内管理システム</p>
+        <p className={styles.subtitle}>BUTIKOMI</p>
 
         {error && <div className={styles.error}>{error}</div>}
 

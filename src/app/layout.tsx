@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "株式会社光 業務システム",
+  title: "BUTIKOMI",
   description: "見積もり・入出金・在庫管理システム",
 };
 

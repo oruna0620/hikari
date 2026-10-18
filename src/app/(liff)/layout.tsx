@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 
 export const metadata: Metadata = {
-  title: "株式会社光",
+  title: "BUTIKOMI",
   description: "LINE業務システム",
 };
 

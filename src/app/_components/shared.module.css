@@ -66,14 +66,14 @@
   font-size: 0.8125rem;
   font-weight: 600;
   color: #ffffff;
-  background: #dc2626;
+  background: var(--color-negative);
   border-radius: var(--radius-sm);
   transition: background var(--transition);
   white-space: nowrap;
 }
 
 .btnDanger:hover {
-  background: #b91c1c;
+  background: var(--color-negative-hover);
 }
 
 .btnIcon {
@@ -216,8 +216,8 @@
 }
 
 .formError {
-  background: rgba(239, 68, 68, 0.08);
-  color: #dc2626;
+  background: var(--color-negative-light);
+  color: var(--color-negative);
   font-size: 0.8125rem;
   padding: 0.625rem 0.875rem;
   border-radius: var(--radius-sm);
@@ -225,8 +225,8 @@
 }
 
 .formSuccess {
-  background: rgba(16, 185, 129, 0.08);
-  color: #059669;
+  background: var(--color-positive-light);
+  color: var(--color-positive);
   font-size: 0.8125rem;
   padding: 0.625rem 0.875rem;
   border-radius: var(--radius-sm);
@@ -245,44 +245,44 @@
 
 .badgeDraft {
   composes: badge;
-  background: rgba(107, 114, 128, 0.1);
-  color: #6b7280;
+  background: var(--color-neutral-light);
+  color: var(--color-neutral);
 }
 
 .badgeSent {
   composes: badge;
-  background: rgba(14, 165, 233, 0.1);
-  color: #0ea5e9;
+  background: var(--color-primary-light);
+  color: var(--color-primary);
 }
 
 .badgeAccepted {
   composes: badge;
-  background: rgba(16, 185, 129, 0.1);
-  color: #059669;
+  background: var(--color-positive-light);
+  color: var(--color-positive);
 }
 
 .badgeRejected {
   composes: badge;
-  background: rgba(239, 68, 68, 0.1);
-  color: #dc2626;
+  background: var(--color-negative-light);
+  color: var(--color-negative);
 }
 
 .badgeUnpaid {
   composes: badge;
-  background: rgba(245, 158, 11, 0.1);
-  color: #d97706;
+  background: var(--color-warning-light);
+  color: var(--color-warning);
 }
 
 .badgePartial {
   composes: badge;
-  background: rgba(14, 165, 233, 0.1);
-  color: #0ea5e9;
+  background: var(--color-primary-light);
+  color: var(--color-primary);
 }
 
 .badgePaid {
   composes: badge;
-  background: rgba(16, 185, 129, 0.1);
-  color: #059669;
+  background: var(--color-positive-light);
+  color: var(--color-positive);
 }
 
 /* ── Modal overlay ── */
@@ -357,11 +357,11 @@
 }
 
 .summaryIncome {
-  color: #059669;
+  color: var(--color-positive);
 }
 
 .summaryExpense {
-  color: #dc2626;
+  color: var(--color-negative);
 }
 
 .summaryNet {
@@ -369,11 +369,11 @@
 }
 
 .summaryNetPositive {
-  color: #059669;
+  color: var(--color-positive);
 }
 
 .summaryNetNegative {
-  color: #dc2626;
+  color: var(--color-negative);
 }
 
 /* ── Month selector ── */

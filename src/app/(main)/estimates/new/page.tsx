@@ -4,7 +4,7 @@ import { eq } from "drizzle-orm";
 import { generateEstimateNumber } from "../actions";
 import { EstimateForm } from "../estimate-form";
 
-export const metadata = { title: "見積もり作成 | 株式会社光" };
+export const metadata = { title: "見積もり作成 | BUTIKOMI" };
 export const dynamic = "force-dynamic";
 
 export default async function NewEstimatePage() {

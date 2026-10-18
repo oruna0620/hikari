@@ -11,7 +11,7 @@ import { eq, asc } from "drizzle-orm";
 import { notFound } from "next/navigation";
 import { EstimateForm } from "../estimate-form";
 
-export const metadata = { title: "見積もり編集 | 株式会社光" };
+export const metadata = { title: "見積もり編集 | BUTIKOMI" };
 export const dynamic = "force-dynamic";
 
 export default async function EditEstimatePage({

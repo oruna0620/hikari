@@ -206,17 +206,17 @@ export function CustomerListClient({
                         c.name
                       )}
                     </td>
-                    <td className={s.textRight} style={{ color: c.income > 0 ? "#059669" : undefined }}>
+                    <td className={s.textRight} style={{ color: c.income > 0 ? "var(--color-positive)" : undefined }}>
                       {c.income > 0 ? `¥${c.income.toLocaleString()}` : "—"}
                     </td>
-                    <td className={s.textRight} style={{ color: c.expense > 0 ? "#dc2626" : undefined }}>
+                    <td className={s.textRight} style={{ color: c.expense > 0 ? "var(--color-negative)" : undefined }}>
                       {c.expense > 0 ? `¥${c.expense.toLocaleString()}` : "—"}
                     </td>
                     <td
                       className={s.textRight}
                       style={{
                         fontWeight: 600,
-                        color: c.net >= 0 ? "#059669" : "#dc2626",
+                        color: c.net >= 0 ? "var(--color-positive)" : "var(--color-negative)",
                       }}
                     >
                       {c.net >= 0 ? "+" : ""}¥{c.net.toLocaleString()}
@@ -226,17 +226,17 @@ export function CustomerListClient({
               })}
               <tr style={{ borderTop: "2px solid var(--color-border)" }}>
                 <td style={{ fontWeight: 700 }}>合計</td>
-                <td className={s.textRight} style={{ fontWeight: 700, color: "#059669" }}>
+                <td className={s.textRight} style={{ fontWeight: 700, color: "var(--color-positive)" }}>
                   ¥{totals.income.toLocaleString()}
                 </td>
-                <td className={s.textRight} style={{ fontWeight: 700, color: "#dc2626" }}>
+                <td className={s.textRight} style={{ fontWeight: 700, color: "var(--color-negative)" }}>
                   ¥{totals.expense.toLocaleString()}
                 </td>
                 <td
                   className={s.textRight}
                   style={{
                     fontWeight: 700,
-                    color: totals.net >= 0 ? "#059669" : "#dc2626",
+                    color: totals.net >= 0 ? "var(--color-positive)" : "var(--color-negative)",
                   }}
                 >
                   {totals.net >= 0 ? "+" : ""}¥{totals.net.toLocaleString()}

@@ -7,7 +7,7 @@ export default function LiffMenuPage() {
   return (
     <div className={s.container}>
       <div className={s.header}>
-        <h1 className={s.title}>株式会社光</h1>
+        <h1 className={s.title}>BUTIKOMI</h1>
         <p className={s.subtitle}>業務メニュー</p>
       </div>
 

@@ -7,7 +7,7 @@ import {
 import { desc, eq } from "drizzle-orm";
 import { CashflowClient } from "./cashflow-client";
 
-export const metadata = { title: "入出金管理 | 株式会社光" };
+export const metadata = { title: "入出金管理 | BUTIKOMI" };
 export const dynamic = "force-dynamic";
 
 export default async function CashflowPage() {

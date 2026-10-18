@@ -3,7 +3,7 @@ import { invoices, expenses, customers } from "@/infrastructure/db/schema";
 import { desc, eq } from "drizzle-orm";
 import { CustomerListClient } from "./customer-list-client";
 
-export const metadata = { title: "顧客別 年間収支 | 株式会社光" };
+export const metadata = { title: "顧客別 年間収支 | BUTIKOMI" };
 export const dynamic = "force-dynamic";
 
 export default async function CustomerCashflowListPage({

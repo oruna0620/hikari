@@ -622,17 +622,17 @@ export function CashflowClient({
                     onClick={() => { setMonth(m.month); setViewMode("monthly"); }}
                   >
                     <td style={{ fontWeight: 600 }}>{m.month}月</td>
-                    <td className={s.textRight} style={{ color: "#059669" }}>
+                    <td className={s.textRight} style={{ color: "var(--color-positive)" }}>
                       ¥{m.income.toLocaleString()}
                     </td>
-                    <td className={s.textRight} style={{ color: "#dc2626" }}>
+                    <td className={s.textRight} style={{ color: "var(--color-negative)" }}>
                       ¥{m.expense.toLocaleString()}
                     </td>
                     <td
                       className={s.textRight}
                       style={{
                         fontWeight: 600,
-                        color: m.net >= 0 ? "#059669" : "#dc2626",
+                        color: m.net >= 0 ? "var(--color-positive)" : "var(--color-negative)",
                       }}
                     >
                       {m.net >= 0 ? "+" : ""}¥{m.net.toLocaleString()}
@@ -641,17 +641,17 @@ export function CashflowClient({
                 ))}
                 <tr style={{ borderTop: "2px solid var(--color-border)" }}>
                   <td style={{ fontWeight: 700 }}>合計</td>
-                  <td className={s.textRight} style={{ fontWeight: 700, color: "#059669" }}>
+                  <td className={s.textRight} style={{ fontWeight: 700, color: "var(--color-positive)" }}>
                     ¥{yearlyData.totals.income.toLocaleString()}
                   </td>
-                  <td className={s.textRight} style={{ fontWeight: 700, color: "#dc2626" }}>
+                  <td className={s.textRight} style={{ fontWeight: 700, color: "var(--color-negative)" }}>
                     ¥{yearlyData.totals.expense.toLocaleString()}
                   </td>
                   <td
                     className={s.textRight}
                     style={{
                       fontWeight: 700,
-                      color: yearlyData.totals.net >= 0 ? "#059669" : "#dc2626",
+                      color: yearlyData.totals.net >= 0 ? "var(--color-positive)" : "var(--color-negative)",
                     }}
                   >
                     {yearlyData.totals.net >= 0 ? "+" : ""}¥{yearlyData.totals.net.toLocaleString()}

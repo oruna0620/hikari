@@ -3,7 +3,7 @@ import { products, inventories, qrCodes } from "@/infrastructure/db/schema";
 import { eq, and, like, sql } from "drizzle-orm";
 import { LiffInventoryForm } from "./liff-inventory-form";
 
-export const metadata = { title: "在庫操作 | 株式会社光" };
+export const metadata = { title: "在庫操作 | BUTIKOMI" };
 
 async function lookupByCode(code: string) {
   // 1. QRコードテーブルから検索（完全一致 → 前方一致）

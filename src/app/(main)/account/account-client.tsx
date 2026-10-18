@@ -143,9 +143,9 @@ export function AccountClient({
                 style={{
                   background:
                     role === "admin"
-                      ? "rgba(14, 165, 233, 0.1)"
-                      : "rgba(107, 114, 128, 0.1)",
-                  color: role === "admin" ? "#0ea5e9" : "#6b7280",
+                      ? "var(--color-primary-light)"
+                      : "var(--color-neutral-light)",
+                  color: role === "admin" ? "var(--color-primary)" : "var(--color-neutral)",
                 }}
               >
                 {roleLabel[role]}

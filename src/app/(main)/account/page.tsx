@@ -2,7 +2,7 @@ import { requireAuth } from "@/lib/auth/guards";
 import { repositories } from "@/lib/di/container";
 import { AccountClient } from "./account-client";
 
-export const metadata = { title: "アカウント設定 | 株式会社光" };
+export const metadata = { title: "アカウント設定 | BUTIKOMI" };
 export const dynamic = "force-dynamic";
 
 export default async function AccountPage() {

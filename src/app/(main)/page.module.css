@@ -49,20 +49,20 @@
 
 .iconEstimate {
   composes: cardIcon;
-  background: rgba(14, 165, 233, 0.1);
-  color: #0ea5e9;
+  background: var(--color-primary-light);
+  color: var(--color-primary);
 }
 
 .iconCashflow {
   composes: cardIcon;
-  background: rgba(6, 182, 212, 0.1);
-  color: #0891b2;
+  background: var(--color-primary-light);
+  color: var(--color-primary);
 }
 
 .iconInventory {
   composes: cardIcon;
-  background: rgba(37, 99, 235, 0.1);
-  color: #2563eb;
+  background: var(--color-primary-light);
+  color: var(--color-primary);
 }
 
 .cardTitle {

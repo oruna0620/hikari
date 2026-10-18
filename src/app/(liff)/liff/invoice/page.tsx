@@ -3,7 +3,7 @@ import { customers, taxSettings } from "@/infrastructure/db/schema";
 import { eq } from "drizzle-orm";
 import { LiffInvoiceForm } from "./liff-invoice-form";
 
-export const metadata = { title: "請求書作成 | 株式会社光" };
+export const metadata = { title: "請求書作成 | BUTIKOMI" };
 export const dynamic = "force-dynamic";
 
 export default async function LiffInvoicePage() {

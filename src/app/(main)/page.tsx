@@ -25,8 +25,8 @@ const cards = [
 export default function Home() {
   return (
     <>
-      <h1 className={styles.title}>ダッシュボード</h1>
-      <p className={styles.subtitle}>社内管理システム(仮)</p>
+      <h1 className={styles.title}>ホーム</h1>
+      <p className={styles.subtitle}>BUTIKOMI</p>
       <div className={styles.grid}>
         {cards.map((c) => (
           <Link key={c.href} href={c.href} className={styles.card}>
